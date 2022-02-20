@@ -15,7 +15,7 @@ export default async function handler(req, res) {
         const bot = new TelegramBot(process.env.TELEGRAM_TOKEN);
 
         // Retrieve the POST request body that gets sent from Telegram
-        const { body } = request;
+        const { body } = req
 
         // Ensure that this is a message being sent
         if (body.message) {
@@ -42,7 +42,7 @@ export default async function handler(req, res) {
     // Acknowledge the message with Telegram
     // by sending a 200 HTTP status code
     // The message here doesn't matter.
-    response.send('OK');
+    res.send('OK');
 }
 
 
