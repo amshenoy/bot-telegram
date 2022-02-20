@@ -1,20 +1,13 @@
 {
-  "name": "telegram-bot",
+  "name": "bot-telegram",
   "version": "0.1.0",
   "private": true,
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "eslint": "8.9.0",
-    "eslint-config-next": "12.1.0"
+    "node-telegram-bot-api": "^0.51.0"
   }
 }
